@@ -1,0 +1,67 @@
+.all{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.character-name {
+  font-family: fantasy;
+  font-size: 40px;
+  width: 600px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  text-align: center;
+  
+}
+
+.name-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px 0px;
+}
+
+.card-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;  
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.entry-title {
+  font-family: 'Times New Roman';
+  text-align: center;
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+  margin-bottom: 0px;
+}
+
+.section{
+  border: 1px solid black;
+  margin: 40px;
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+  background-color: white;
+}
+
+.gender-button{
+  font-size: 25px;
+  width: 33.3%;
+  height: 80px;
+  border: none;
+  background-color: white;
+  outline: none;
+}
+.gender-button:hover{
+  background-color: grey;
+  color: white;
+}
+
+.gender-button:focus{
+  background-color: black;
+  color: white;
+}
+

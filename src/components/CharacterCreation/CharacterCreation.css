@@ -25,9 +25,10 @@
 .card-container {
   margin-top: 30px;
   display: flex;
-  flex-direction: row;  
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;  
+  justify-items: center;
+  justify-content: space-around;
 }
 
 .entry-title {
@@ -55,6 +56,11 @@
   background-color: white;
   outline: none;
 }
+
+.center-button{
+  width: 33.4%;
+}
+
 .gender-button:hover{
   background-color: grey;
   color: white;
@@ -65,3 +71,7 @@
   color: white;
 }
 
+.card{
+  margin-right: 4%;
+  margin-left: 4%;
+}

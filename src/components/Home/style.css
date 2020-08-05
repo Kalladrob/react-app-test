@@ -1,23 +1,56 @@
-.nav-link-container{
+.welcome-message{
+    font-family: 'Times New Roman';
+    background-color: #ebd78d;
+    border: 1px solid black;
+    margin-top: 20px;
+    width: 85%;
+    margin-right: 7.5%;
+    margin-left: 7.5%;
+    text-align: center;
+}
+
+.intro-text{
     display: flex;
-    justify-content: space-evenly;
-    font-size: 30px;    
-}
-
-.navbar{
-    border: 2px solid black;
+    flex-direction: column;
+    flex-wrap: wrap;
     background-color: white;
-    padding: 10px;
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid black;
+    border-top: none;
+    text-align: center;    
 }
 
-.nav-link{
-    text-decoration: none;
-    color: black;
+text{
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-.nav-link:hover{
-    color: purple;
+.row-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;    
+    text-align: center;
+    border: 1px solid black;
+}
+
+.row-title{
+    background-color: #ebd78d;
+    font-family: 'Times New Roman'; 
+    margin-bottom: 0px;
+    margin-top: 0px;
+    border-bottom: 1px solid black  
+}
+
+button{
+    width: 50%;
+    height: 100%;
+    font-size: 25px;
 }

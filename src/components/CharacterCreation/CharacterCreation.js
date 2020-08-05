@@ -1,23 +1,28 @@
-import React, { Component } from 'react'
-import Card from '../Card/Card.js'
-import Home from '../Home'
-import './CharacterCreation.css'
+import React, { Component } from 'react';
+import Card from '../Card/Card.js';
+import Navbar from '../Navbar/Navbar.js'
+import CharView from '../CharacterView/CharacterView.js';
+import './CharacterCreation.css';
 
-class CharacterCreation extends Component {
+class CharCreation extends Component {
     
     state = {
+        charName: '',
         placeholder: "Enter the Character's Name..."
     }
     
     render = () => {
         return(
             <div>
-                <Home/>
-                <div className="all">
+                <Navbar/>
+                <div className="charCreation">
                     <div className="section">
                         <h1 className="entry-title">NAME</h1>
                         <div className="name-container">  
-                            <input className="character-name" placeholder={this.state.placeholder} onClick={this.setState({placeholder: ''})}/>
+                            <input className="character-name-entry" placeholder={this.state.placeholder} 
+                            onChange={event => this.setState({charName: event.target.value})}
+                            onClick={() => this.setState({placeholder: ''})} 
+                            onBlur={() => this.state.charName === '' ? this.setState({placeholder: "Enter the Character's Name..."}) : console.log('Ok')}/>
                         </div>
                     </div>
                     <div className="section">
@@ -57,10 +62,13 @@ class CharacterCreation extends Component {
                         </div>
                     </div>
                 </div>
+                <div className="charPreview">
+                    <CharView />
+                </div>
             </div>
         )
     }
 
 }
 
-export default CharacterCreation;
+export default CharCreation;

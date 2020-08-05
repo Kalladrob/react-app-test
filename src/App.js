@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter, Switch, Route} from 'react-router-dom'
 import Menu from './components/Home'
-import CharacterCreation from './components/CharacterCreation/CharacterCreation.js'
+import CharCreation from './components/CharacterCreation/CharacterCreation.js'
 import CharacterList from './components/CharacterList/CharacterList'
 
 class App extends Component {
@@ -15,7 +15,7 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={Menu}/>
             <Route exact path="/CharacterList" component={CharacterList}/>
-            <Route exact path="/CharacterCreation" component={CharacterCreation}/>
+            <Route exact path="/CharacterCreation" component={CharCreation}/>
           </Switch>
         </BrowserRouter>
       </body>

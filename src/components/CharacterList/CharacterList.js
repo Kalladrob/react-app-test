@@ -1,12 +1,24 @@
 import React, { Component } from 'react'
-import Home from '../Home'
+import Navbar from '../Navbar/Navbar.js'
+import CharView from '../CharacterView/CharacterView.js';
+
+const charList = [{charName: 'Valinor'}, {charName: 'Dorian'}, {charName: 'Ilgor'}, {charName: 'Sonna'}]
 
 class CharList extends Component {
-    render(){
+    
+    renderList = () => {
+        const list = [];
+        charList.forEach(item => list.push(
+            <CharView name={item.charName}/>
+        ))
+        return list;
+    }
+    
+    render = () => {
         return(
             <>
-                <Home/>
-                <h1>Teste</h1>
+                <Navbar />
+                {this.renderList()}
             </>
         )
     }

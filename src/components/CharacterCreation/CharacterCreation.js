@@ -42,7 +42,6 @@ class CharCreation extends Component {
                             <Card className="card" cardName="Dark Elf"/>
                             <Card className="card" cardName="Halfling"/>
                             <Card className="card" cardName="Orc"/>
-                            <Card className="card" cardName="Undead"/>
                         </div>
                     </div>
                     <div className="section">

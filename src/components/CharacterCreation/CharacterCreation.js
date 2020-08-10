@@ -3,17 +3,20 @@ import Card from '../Card/Card.js';
 import Navbar from '../Navbar/Navbar.js'
 import CharView from '../CharacterView/CharacterView.js';
 import './CharacterCreation.css';
+import { GenderButton } from './CharacterCreationStyled'
+
 
 class CharCreation extends Component {
     
     state = {
         charName: '',
-        placeholder: "Enter the Character's Name..."
+        placeholder: "Enter the Character's Name...",
+        gender: 0,
     }
-    
+
     render = () => {
         return(
-            <div>
+            <>
                 <Navbar/>
                 <div className="charCreation">
                     <div className="section">
@@ -28,9 +31,9 @@ class CharCreation extends Component {
                     <div className="section">
                         <h1 className="entry-title">GENDER</h1>
                         <div className="gender-container">
-                            <button className="gender-button">Male</button>
-                            <button className="gender-button center-button">Female</button>
-                            <button className="gender-button">Other</button>
+                            <GenderButton onClick={() => this.setState({ gender: 1 })} disabled={this.state.gender === 1}>Male</GenderButton>
+                            <GenderButton onClick={() => this.setState({ gender: 2 })} center disabled={this.state.gender === 2}>Female</GenderButton>
+                            <GenderButton onClick={() => this.setState({ gender: 3 })} disabled={this.state.gender === 3}>Other</GenderButton>
                         </div>
                     </div>
                     <div className="section">
@@ -47,24 +50,24 @@ class CharCreation extends Component {
                     <div className="section">
                         <h1 className="entry-title">CLASS</h1>
                         <div className="card-container">
-                            <Card cardName="Warrior"/>
-                            <Card cardName="Mage"/>
-                            <Card cardName="Archer"/>
-                            <Card cardName="Rogue"/>
-                            <Card cardName="Ranger"/>
-                            <Card cardName="Berserker"/>
-                            <Card cardName="Warlock"/>
-                            <Card cardName="Paladin"/>
-                            <Card cardName="Blood Knight"/>
-                            <Card cardName="Necromancer"/>
-                            <Card cardName="Cleric"/>
+                            <Card cardName="Warrior" imgId='1'/>
+                            <Card cardName="Mage" imgId='3'/>
+                            <Card cardName="Archer" imgId='2'/>
+                            <Card cardName="Rogue" imgId='4'/>
+                            <Card cardName="Ranger" imgId='10'/>
+                            <Card cardName="Berserker" imgId='12'/>
+                            <Card cardName="Warlock" imgId='7'/>
+                            <Card cardName="Paladin" imgId='5'/>
+                            <Card cardName="Blood Knight" imgId='11'/>
+                            <Card cardName="Necromancer" imgId='8'/>
+                            <Card cardName="Cleric" imgId='9'/>
                         </div>
                     </div>
                 </div>
                 <div className="charPreview">
-                    <CharView />
+                    <CharView  />
                 </div>
-            </div>
+            </>
         )
     }
 

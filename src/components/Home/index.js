@@ -6,33 +6,53 @@ class Home extends Component{
 
     render() {
         return (
-            <div>
+            <div className="all">
                 <Navbar/>
                 <div className="welcome-message"><h1>GREETINGS, ADVENTURERS!</h1></div>
                 <div className="intro-text">
-                    <text>
+                    <p>
                         This is a tool to help you create and/or embark in grand adventures!
-                    </text>
-                    <text>
+                    </p>
+                    <p>
                         Here, you'll be able to create and manage characters, send them in 
                         adventures created by other players and even create your own for you to play in or share with others.
-                    </text>
-                    <text>
+                    </p>
+                    <p>
                         Choose the path forward and godspeed, friends!
-                    </text>
+                    </p>
                 </div>
+                <h1 className="row-title">Character</h1>
                 <div className="row-div">
-                    <h1 className="row-title">Character</h1>
+                    <div className="row top-row">
+                        <button className="left-button">Create Character</button>
+                        <button>Manage Characters</button>
+                    </div>
                     <div className="row">
-                        <button>Create</button>
-                        <button>Manage</button>
+                        <button className="left-button">Create NPC</button>
+                        <button>Manage NPCs</button>
+                    </div>
+                    <div className="row bottom-row">
+                        <button className="left-button">Create Enemy</button>
+                        <button>Manage Enemies</button>
                     </div>
                 </div>
+                <h1 className="row-title">Adventure</h1>
                 <div className="row-div">
-                    <h1 className="row-title">Adventure</h1>
+                    <div className="row top-row">
+                        <button className="left-button">Create World</button>
+                        <button>Manage World</button>
+                    </div>
                     <div className="row">
-                        <button>Create</button>
-                        <button>Manage</button>
+                        <button className="left-button">Create Map</button>
+                        <button>Manage Maps</button>
+                    </div>
+                    <div className="row">
+                        <button className="left-button">Create Item</button>
+                        <button>Manage Items</button>
+                    </div>
+                    <div className="row bottom-row">
+                        <button className="left-button">Create Questline</button>
+                        <button>Manage Questlines</button>
                     </div>
                 </div>
             </div>

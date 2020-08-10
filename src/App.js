@@ -9,7 +9,7 @@ class App extends Component {
   
   render(){  
     return (
-      <body>
+      <>
         <h1 className="coa">Call of Adventure</h1>
         <BrowserRouter>
           <Switch>
@@ -18,7 +18,7 @@ class App extends Component {
             <Route exact path="/CharacterCreation" component={CharCreation}/>
           </Switch>
         </BrowserRouter>
-      </body>
+      </>
     )
   }
 }

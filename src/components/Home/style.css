@@ -1,7 +1,13 @@
+.all{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .welcome-message{
     font-family: 'Times New Roman';
     background-color: #ebd78d;
-    border: 1px solid black;
+    border: 2px solid black;
     margin-top: 20px;
     width: 85%;
     margin-right: 7.5%;
@@ -39,18 +45,48 @@ text{
     margin-right: 20%;    
     text-align: center;
     border: 1px solid black;
+    margin-bottom: 10px;
+    border-top: none;
 }
 
 .row-title{
     background-color: #ebd78d;
-    font-family: 'Times New Roman'; 
+    font-family: 'Times New Roman';
     margin-bottom: 0px;
     margin-top: 0px;
-    border-bottom: 1px solid black  
+    border: 2px solid black;
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
+    margin-left: 15%;
 }
 
 button{
     width: 50%;
     height: 100%;
     font-size: 25px;
+    border: none;
+    background-color: white;
+    padding: 5px;
+}
+
+.row{
+    border-bottom: 1px solid black;
+}
+
+button:hover{
+    background-color: grey;
+    color: white;
+}
+
+.left-button{
+    border-right: 1px solid black;
+}
+
+.bottom-row{
+    border-bottom: none;
+}
+
+h1{
+    padding: 15px;
 }

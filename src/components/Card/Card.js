@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
-import './style.css';
+import { BackgroundImage,
+        FullCard,
+        CardName} from './CardStyled'
 
 class Card extends Component {
 
-    
-
     render = () => {
+        
         return(
-            <div className="card">
-                <div className="image"/>
-                <div className="name">
+            <FullCard>
+                <BackgroundImage id={this.props.imgId} />
+                <CardName>
                     <h1>{this.props.cardName}</h1>
-                </div>
-            </div>
+                </CardName>
+            </FullCard>
         )
     }
 

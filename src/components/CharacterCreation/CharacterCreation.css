@@ -14,6 +14,8 @@
   text-align: center;
   width: 100%;
   height: 100%;
+  border-bottom: 1px black solid;
+  padding: 0px;
 }
 
 .name-container {
@@ -38,8 +40,10 @@
   font-family: 'Times New Roman';
   text-align: center;
   border-bottom: 1px solid black;
+  padding-top: 20px;
   padding-bottom: 20px;
   margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 .section{

@@ -4,48 +4,6 @@
   flex-wrap: wrap;
 }
 
-.character-name-entry {
-  font-family: fantasy;
-  font-size: 40px;
-  width: 600px;
-  font-weight: bold;
-  border: none;
-  outline: none;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  border-bottom: 1px black solid;
-  padding: 0px;
-}
-
-.name-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  height: 80px;
-  background-color: white;  
-}
-
-.card-container {
-  padding-top: 30px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;  
-  justify-items: center;
-  justify-content: space-around;
-  background-color: white;
-}
-
-.entry-title {
-  font-family: 'Times New Roman';
-  text-align: center;
-  border-bottom: 1px solid black;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-bottom: 0px;
-  margin-top: 0px;
-}
-
 .section{
   border: 1px solid black;
   margin: 40px;
@@ -54,31 +12,6 @@
   margin-right: 10%;
   margin-left: 10%;
   background-color: #ebd78d;
-}
-
-.gender-button{
-  font-size: 25px;
-  width: 33.3%;
-  height: 80px;
-  border: none;
-  background-color: white;
-  outline: none;
-}
-
-.center-button{
-  width: 33.4%;
-  border-right: 1px solid black;
-  border-left: 1px solid black;
-}
-
-.gender-button:hover{
-  background-color: grey;
-  color: white;
-}
-
-.gender-button::selection{
-  background-color: black;
-  color: white;
 }
 
 .card{
